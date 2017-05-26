@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BEST Aveiro</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="../css/custom-css.css" />
+    <link type="text/css" rel="stylesheet" href="../css/custom-css2.css" />
+
+    <!-- i18next Javascript -->
+    <!-- <script src="http://i18next.com/public/download/latest/i18next.js"></script> -->
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="../js/custom-js.js"></script>
+
+    <!-- Facebook moderation tool -->
+    <meta property="fb:app_id"       content="649374655165267" />
+</head>
+<body>
+
+<!-- Facebook Javascript SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.5&appId=649374655165267";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- ./Facebook Javascript SDK -->
+
+<div  class="jumbotron" id="header"> <!-- begin header-->
+
+    <a href="//bestaveiro.web.ua.pt" > <img src="../images/logo_BEST_branco.png" onmouseover="this.src='../images/logo_BEST.png'" onmouseout="this.src='../images/logo_BEST_branco.png'"  id="logo_BEST"/></a>
+
+</div> <!-- end header-->
+
+<!-- Language dropdown
+<div class="languages-container">
+    <div id="languages-dropdown" data-input-name="language"></div>
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="lang-dropdown">
+            <img src="images/pt.png"> &nbsp; Portuguese &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#" id="pt-lang"><img src="images/pt.png"> &nbsp; Portuguese &nbsp; </a></li>
+            <li><a href="#" id="en-lang"><img src="images/gb.png"> &nbsp; English &nbsp; </a></li>
+        </ul>
+    </div>
+</div>
+ ./Language dropdown -->
+<script>
+    (function($){
+        $(document).ready(function(){
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);
+</script>
+
+
+<div  class="container" id="main">
+    <div class="row" style="padding: 0px" > <!-- Nav Bar -->
+        <div id="custom-bootstrap-menu" class="navbar1" role="navigation" style="margin:0px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="//bestaveiro.web.ua.pt" data-i18n="main-menu.home">HOME</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.best">BEST</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="../best-international.html">Internacional</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aveiro</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../best-aveiro.html">Organização</a></li>
+                                        <li><a href="../team.html">Membros</a></li>
+                                        <li><a href="../aveiro.html">Cidade</a></li>
+                                        <li><a href="../university.html">Universidade</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.events">EVENTOS</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="../ebec.html">EBEC</a></li>
+                                <li><a href="../seasonal-courses.html">Cursos</a></li>
+                                <li><a href="../abcs.html">ABC</a></li>
+                                <li><a href="../btds.html">BTD</a></li>
+                                <li><a href="../innovnow.html">InnovNow</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.partners">PARCEIROS</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="../sponsors.html">Atuais Parceiros</a></li>
+                                <li><a href="../BeaPartner.html">Seja um Parceiro</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../media.html" data-i18n="main-menu.media">MEDIA</a>
+                        </li>
+                        <li><a href="../contacts.html" data-i18n="main-menu.contacts">CONTACTOS</a>
+                        </li>
+                        <li><a href="../recrutamento.html" data-i18n="main-menu.recruitment">RECRUTAMENTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end NavBar -->
+    <div class="row" style="padding: 20px" id="content">
+
+        <div class="col-lg-12">
+
+            <!-- Title -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title panel-big-title">Um curso por ano: Bohdan Kulyk</h3>
+                </div>
+            </div>
+
+            <!-- Date and Time -->
+            <p><span class="glyphicon glyphicon-time"></span> Posted on February 18, 2017 at 10:00 PM</p>
+
+
+
+            <!-- Preview Image -->
+            <div class="panel panel-default">
+                <img class="img-responsive img-thumbnail img-center" src="../images/News/bogdan.jpeg" alt="" >
+            </div>
+
+            <!-- Post Content -->
+            <br>
+            <p align="justify">Bohdan Kulyk estuda Engenharia Física na Universidade de Aveiro e já participou em 3 cursos
+                sazonais proporcionados pelo BEST. Em 2013 viajou até Sofia, Bulgária, para participar no seu primeiro curso
+                relacionado com a programação de apps em Android. Desde então apaixonou-se por esta nova forma de aprender.
+                Em 2015, foi até Roma para aprender mais sobre a indústria espacial, e em 2016 seguiu para Barcelona para um
+                curso que abordava o tema smart cities. Lê a entrevista que lhe fizemos.
+            </p>
+            <p align="justify"><b>Em 2013, quais os motivos que te levaram a candidatares-te a um curso do BEST?</b><br>
+                A possibilidade de experiências formativas no estrangeiro foi sempre algo que associei à vida académica,
+                estando sempre atento a quaisquer oportunidades desse tipo. Assim, quando ouvi que o BEST organizava cursos
+                por toda a Europa, apercebi-me de imediato que era algo que tinha de aproveitar. Além disso, pareceu-me ser
+                uma boa forma de ter umas férias mais ativas.
+            </p>
+            <p align="justify"><b>E nos anos seguintes?</b><br>
+                Após o primeiro curso, tive a certeza de que queria voltar a participar em cursos semelhantes,
+                não só pelo facto de este ter superado todas as minhas expectativas, como também devido à vontade
+                de conhecer novas pessoas e interagir com novas culturas. Além disso, o primeiro curso tornou claro
+                que algumas das experiências mais memoráveis do mesmo só são possíveis nos cursos BEST.
+            </p>
+
+            <p align="justify"><b>Que mais aprendeste nestes 3 cursos?</b><br>
+                Para além dos conhecimentos académicos que adquiri, aprendi imenso sobre a vida estudantil noutros países.
+                Refiro-me não só ao país onde um dado curso decorreu, mas também aos países de origem dos restantes participantes.
+            </p>
+
+            <p align="justify"><b>Como descreverias a experiência de ser participante num curso BEST aos teus amigos?</b><br>
+                Um curso BEST é uma experiência muito… intensa, no sentido em que há sempre algo para fazer e que só
+                se faz num curso destes. Além disso, é a melhor forma de conhecer um país novo, dado que todas as atividades,
+                eventos lúdicos, excursões e festas são organizados por estudantes locais que sabem dar a conhecer o seu país
+                de uma forma apelativa e que vai ao encontro aos interesses dos participantes.
+            </p>
+
+            <p align="justify"><b>Se tivesses possibilidade, voltarias a candidatar-te a mais um curso este ano?</b><br>
+                Sim, definitivamente! Cada curso é diferente dos anteriores, proporcionando surpresas agradáveis tanto aos
+                que se candidatam pela primeira vez como aos mais experientes.
+            </p>
+
+                <hr class="post-separator">
+
+                <div class="well well-sm">
+                    <!-- Facebook comments plugin -->
+                    <div class="fb-comments" data-href="http://bestaveiro.web.ua.pt/" data-width="550" data-numposts="5"></div>
+                    <!-- ./Facebook comments plugin -->
+                </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- end main -->
+<div  id="footer">
+    <div class="row">
+        <div class="col-md-12" align="center">
+            <ul class="list-inline social-buttons">
+                <li><a href="https://www.facebook.com/BESTaveiro?fref=ts" class="btn btn-social-icon btn-facebook" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="http://www.instawebgram.com/i/best.aveiro" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li><a href="https://twitter.com/bestaveiro" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/pub/best-aveiro/44/65b/a29" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://plus.google.com/100971072008213825789/posts" class="btn btn-social-icon btn-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-12" align="center" id="by">
+            <h4>Powered by BEST Aveiro IT Team - The-Bugs ©2015</h4>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

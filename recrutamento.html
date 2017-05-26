@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEST Aveiro</title>
+        <meta charset="utf-8"/>        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <!-- Bootstrap Core CSS -->        
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="css/custom-css.css" />
+        <link type="text/css" rel="stylesheet" href="css/custom-css2.css" />
+
+        <!-- i18next Javascript -->
+        <script src="http://i18next.com/public/download/latest/i18next.js"></script>
+        
+        <!-- Custom Javascript -->
+        <script type="text/javascript" src="js/custom-js.js"></script>
+    </head>
+    <body>
+        <div  class="jumbotron" id="header"> <!-- begin header-->
+            
+            <a href="//bestaveiro.web.ua.pt" > <img id="logo_BEST" src="images/logo_BEST_branco.png" onmouseover="this.src='images/logo_BEST.png'" onmouseout="this.src='images/logo_BEST_branco.png'"  id="logo_BEST"/></a>
+            
+        </div> <!-- end header-->
+
+        <!-- Language dropdown 
+        <div class="languages-container">
+            <div id="languages-dropdown" data-input-name="language"></div>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="lang-dropdown">
+                    <img src="images/pt.png"> &nbsp; Portuguese &nbsp; <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="pt-lang"><img src="images/pt.png"> &nbsp; Portuguese &nbsp; </a></li>
+                    <li><a href="#" id="en-lang"><img src="images/gb.png"> &nbsp; English &nbsp; </a></li>
+                </ul>
+            </div>
+        </div>
+         ./Language dropdown -->         
+            
+        <script>
+        (function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+        </script>
+        
+        <div  class="container" id="main">           
+            <div class="row" style="padding: 0px" > <!-- Nav Bar -->
+             <div id="custom-bootstrap-menu" class="navbar1" role="navigation" style="margin:0px">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                        </div>
+                       
+                        <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="//bestaveiro.web.ua.pt" data-i18n="main-menu.home">HOME</a>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.best">BEST</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="best-international.html">Internacional</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a href="best-international.html" class="dropdown-toggle" data-toggle="dropdown">Aveiro</a>
+                                                <ul class="dropdown-menu">
+                                                <li><a href="best-aveiro.html">Organização</a></li>
+                                                <li><a href="team.html">Membros</a></li>
+                                                <li><a href="aveiro.html">Cidade</a></li>
+                                                <li><a href="university.html">Universidade</a></li>
+                                                </ul>
+                                        </li>                                                
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.events">EVENTOS</a>
+                                   <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="ebec.html">EBEC</a></li>
+                                        <li><a href="seasonal-courses.html">Cursos</a></li>
+                                        <li><a href="abcs.html">ABC</a></li>
+                                        <li><a href="btds.html">BTD</a></li>
+                                       <li><a href="innovnow.html">InnovNow</a></li>
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.partners">PARCEIROS</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="sponsors.html">Atuais Parceiros</a></li>
+                                        <li><a href="BeaPartner.html">Seja um Parceiro</a></li>
+                                   </ul>
+                                </li>
+                                <li><a href="media.html" data-i18n="main-menu.media">MEDIA</a>
+                                </li>
+                                <li><a href="contacts.html" data-i18n="main-menu.contacts">CONTACTOS</a>
+                                </li>
+                                <li><a href="recrutamento.html" data-i18n="main-menu.recruitment">RECRUTAMENTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end NavBar -->               
+                            
+            
+        <div class="row" style="padding: 20px" id="content">                
+                
+                <!-- Title -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title panel-big-title">Recrutamento</h3>
+                    </div>                            
+                </div>
+                            
+             
+            <div class="col-lg-12" style="padding-top: 15px">
+                                <!-- Title -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title panel-big-title" data-i18n="main-menu.recruitment">Recrutamento</h3>
+                    </div>                            
+                </div>
+                
+            <!-- Left content -->
+            <div class="col-lg-6" style="">                   
+                <div class="well well-lg">                        
+                    <br>
+                    <p align="justify" data-i18n="recruitment1">Já pensaste em ser mais do que um simples estudante?
+                        Queres fazer parte desta fantástica associação? Queres contribuir para o desenvolvimento dos estudantes da tua
+                        universidade?</p>
+                    <p align="justify" data-i18n="recruitment2">Não percas mais tempo!
+                        Inscreve-te!</p>
+                    <a class="btn btn-primary" href="documents/Guia%20do%20Candidato.pdf">Guia do Candidato</a>
+                    <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSd1CkRxH0T7P_Q8wt09eqcvOQzkNPWdIMxVtyapgeFzSzJnIA/viewform?c=0&w=1">Inscreve-te Aqui!</a>
+
+
+                </div>
+            </div>
+            <!-- Right content -->
+            <div class="col-lg-6" style="">                   
+                <div class="well well-sm">  
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/70oL0lwOnuo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                </div>                
+            </div>
+            
+             
+            <div class="col-lg-12" style="padding-top: 15px">
+                <!-- testemunho -->                  
+                <div class="well well-sm">    
+                    <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" data-i18n="recruitment_test">Testemunho</h3>
+                            </div>                            
+                        </div> 
+                    <br>
+                    <blockquote>
+                <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/recrutamento/CarolinaConcei%C3%A7%C3%A3o.jpg" style="width: 200px;height:200px;">
+                </div>
+                <div class="col-sm-9" style="padding: 20px">
+                  <i class="fa fa-quote-left fa-2x"></i><p align="justify" data-i18n="recruitment3">Para mim entrar no BEST foi uma das melhores decisões que tomei a nível pessoal e acadêmico. Após ter assumido vários cargos, desenvolvi-me em áreas que anteriormente eram inatingíveis para mim. Conceitos como liderança, gestão de tempo, gestão de projetos e motivação numa equipa de trabalho tornaram-se reais.</p>
+                    <p align="justify" data-i18n="recruitment4">Hoje posso dizer que que sou muito mais do que era há três anos, sinto-me muito mais preparada para integrar o mundo do trabalho e pronta a aceitar o que o futuro me espera. Para além disso, integrei uma grande família, um conjunto de amigos e de pessoas com as quais me identifico, com as quais passei experiências inesquecíveis e bastante enriquecedoras. </p>
+                  <small>Carolina Conceição</small>
+                </div>
+              </div>
+            </blockquote>
+                </div>
+            </div>
+            <div class="col-lg-12" style="padding-top: 15px">
+                     <!-- Video  -->  
+                <div class="well well-sm">  
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UBQylnzzS3M" frameborder="0" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+         
+        </div>
+        
+        <div  id="footer">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/BESTaveiro?fref=ts" class="btn btn-social-icon btn-facebook" target="_blank">
+    <i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.instawebgram.com/i/best.aveiro" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/bestaveiro" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/pub/best-aveiro/44/65b/a29" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://plus.google.com/100971072008213825789/posts" class="btn btn-social-icon btn-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" align="center" id="by">
+                    <h4>Powered by BEST Aveiro IT Team - The-Bugs ©2015</h4>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>

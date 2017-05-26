@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEST Aveiro</title>
+        <meta charset="utf-8"/>        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <!-- Bootstrap Core CSS -->        
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css" />
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="../css/custom-css.css" />
+        <link type="text/css" rel="stylesheet" href="../css/custom-css2.css" />
+
+        <!-- i18next Javascript -->
+        <!-- <script src="http://i18next.com/public/download/latest/i18next.js"></script> -->
+        
+        <!-- Custom Javascript -->
+        <script type="text/javascript" src="<../js/custom-js.js"></script>
+
+        <!-- Facebook moderation tool -->
+        <meta property="fb:app_id"       content="649374655165267" />    
+    </head>
+    <body>
+
+        <!-- Facebook Javascript SDK -->
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.5&appId=649374655165267";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <!-- ./Facebook Javascript SDK -->
+
+        <div  class="jumbotron" id="header"> <!-- begin header-->
+            
+            <a href="//bestaveiro.web.ua.pt" > <img id="logo_BEST" src="../images/logo_BEST_branco.png" onmouseover="this.src='../images/logo_BEST.png'" onmouseout="this.src='../images/logo_BEST_branco.png'"  id="logo_BEST"/></a>
+            
+        </div> <!-- end header-->
+
+        <!-- Language dropdown 
+        <div class="languages-container">
+            <div id="languages-dropdown" data-input-name="language"></div>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="lang-dropdown">
+                    <img src="images/pt.png"> &nbsp; Portuguese &nbsp; <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="pt-lang"><img src="images/pt.png"> &nbsp; Portuguese &nbsp; </a></li>
+                    <li><a href="#" id="en-lang"><img src="images/gb.png"> &nbsp; English &nbsp; </a></li>
+                </ul>
+            </div>
+        </div>
+         ./Language dropdown -->         
+        <script>
+        (function($){
+    $(document).ready(function(){
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+            event.preventDefault(); 
+            event.stopPropagation(); 
+            $(this).parent().siblings().removeClass('open');
+            $(this).parent().toggleClass('open');
+        });
+    });
+})(jQuery);
+        </script>    
+        
+        
+        <div  class="container" id="main">           
+            <div class="row" style="padding: 0px" > <!-- Nav Bar -->
+             <div id="custom-bootstrap-menu" class="navbar1" role="navigation" style="margin:0px">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                        </div>
+                       
+                        <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="//bestaveiro.web.ua.pt" data-i18n="main-menu.home">HOME</a>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.best">BEST</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="../best-international.html">Internacional</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aveiro</a>
+                                                <ul class="dropdown-menu">
+                                                <li><a href="../best-aveiro.html">Organização</a></li>
+                                                <li><a href="../team.html">Membros</a></li>
+                                                <li><a href="../aveiro.html">Cidade</a></li>
+                                                <li><a href="../university.html">Universidade</a></li>
+                                                </ul>
+                                        </li>                                                
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.events">EVENTOS</a>
+                                   <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="../ebec.html">EBEC</a></li>
+                                        <li><a href="../seasonal-courses.html">Cursos</a></li>
+                                        <li><a href="../abcs.html">ABC</a></li>
+                                        <li><a href="../btds.html">BTD</a></li>
+                                       <li><a href="../innovnow.html">InnovNow</a></li>
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.partners">PARCEIROS</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="../sponsors.html">Atuais Parceiros</a></li>
+                                        <li><a href="../BeaPartner.html">Seja um Parceiro</a></li>
+                                   </ul>
+                                </li>
+                                <li><a href="../media.html" data-i18n="main-menu.media">MEDIA</a>
+                                </li>
+                                <li><a href="../contacts.html" data-i18n="main-menu.contacts">CONTACTOS</a>
+                                </li>
+                                <li><a href="../recrutamento.html" data-i18n="main-menu.recruitment">RECRUTAMENTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end NavBar -->
+             <div class="row" style="padding: 20px" id="content">
+                
+                <div class="col-lg-12">
+                
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title panel-big-title">Shoyce apoia Summer Course</h3>
+                        </div>                            
+                    </div>
+                    
+                    <!-- Date and Time -->
+                    <p><span class="glyphicon glyphicon-time"></span>Posted on August 20, 2016 at 10:06 PM</p>
+
+                    
+                    
+                    <!-- Preview Image -->
+                    <div class="panel panel-default">
+                        <img class="img-responsive  img-center" src="../images/News/shoyce.jpg" alt="" style="margin: 0 auto" >
+                    </div>
+
+                    <!-- Post Content -->
+                    <p align="justify">A Shoyce, única marca portuguesa de bebidas de soja, com produção 100% nacional será parceira da Associação BEST Aveiro no curso “The engine beneath your skin!” com o tema biomecânica e dispositivos médicos. 
+</p>
+                    <p align="justify">Esta marca prima pela qualidade em todos os seus produtos, apostando no cultivo da sua própria soja, de forma a acompanhar todo o processo para a obtenção da melhor matéria prima. Outra característica é a aposta forte na área de desenvolvimento permitindo que o sabor, a textura e as propriedades nutricionais das bebidas sejam naturais. Na Shoyce nenhum novo produto é lançado sem que cumpra todas as elevadas exigências de qualidade da própria marca. 
+
+</p>
+                    <p align="justify">Sendo parceira do curso de verão irá contribuir com alguns dos seus produtos dando a oportunidade aos estudantes europeus de degustar as suas bebidas de soja 100% portuguesas.
+</p>
+  <p align="justify">Para mais informações: <a href="http://shoyce.pt/"> http://shoyce.pt/</a>
+</p>
+                    
+                    <hr class="post-separator">
+                    
+                    <div class="well well-sm">
+                        <!-- Facebook comments plugin -->
+                        <div class="fb-comments" data-href="http://bestaveiro.web.ua.pt/" data-width="550" data-numposts="5"></div>
+                        <!-- ./Facebook comments plugin -->
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div> 
+        <!-- end main -->
+       <div  id="footer">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/BESTaveiro?fref=ts" class="btn btn-social-icon btn-facebook" target="_blank">
+    <i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.instawebgram.com/i/best.aveiro" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/bestaveiro" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/pub/best-aveiro/44/65b/a29" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://plus.google.com/100971072008213825789/posts" class="btn btn-social-icon btn-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" align="center" id="by">
+                    <h4>Powered by BEST Aveiro IT Team - The-Bugs ©2015</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

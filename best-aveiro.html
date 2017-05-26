@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+    <head>
+        <title>BEST Aveiro</title>
+        <meta charset="utf-8"/>        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <!-- Bootstrap Core CSS -->        
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="css/custom-css.css" />
+        <link type="text/css" rel="stylesheet" href="css/custom-css2.css" />
+
+        <!-- i18next Javascript -->
+        <script src="http://i18next.com/public/download/latest/i18next.js"></script>
+        
+        <!-- Custom Javascript -->
+        <script type="text/javascript" src="js/custom-js.js"></script>
+    </head>
+    <body>
+        <div  class="jumbotron" id="header"> <!-- begin header-->
+            
+            <a href="//bestaveiro.web.ua.pt" > <img id="logo_BEST" src="images/logo_BEST_branco.png" onmouseover="this.src='images/logo_BEST.png'" onmouseout="this.src='images/logo_BEST_branco.png'"  id="logo_BEST"/></a>
+            
+        </div> <!-- end header-->
+
+        <!-- Language dropdown 
+        <div class="languages-container">
+            <div id="languages-dropdown" data-input-name="language"></div>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="lang-dropdown">
+                    <img src="images/pt.png"> &nbsp; Portuguese &nbsp; <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="pt-lang"><img src="images/pt.png"> &nbsp; Portuguese &nbsp; </a></li>
+                    <li><a href="#" id="en-lang"><img src="images/gb.png"> &nbsp; English &nbsp; </a></li>
+                </ul>
+            </div>
+        </div>
+         ./Language dropdown -->         
+        
+        <script>
+        (function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+        </script>        
+
+        
+        <div  class="container" id="main">           
+            <div class="row" style="padding: 0px" > <!-- Nav Bar -->
+             <div id="custom-bootstrap-menu" class="navbar1" role="navigation" style="margin:0px">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                        </div>
+                       
+                        <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="//bestaveiro.web.ua.pt" data-i18n="main-menu.home">HOME</a>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.best">BEST</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="best-international.html">Internacional</a></li>
+                                        <li class="dropdown-submenu">
+                                            <a href="best-international.html" class="dropdown-toggle" data-toggle="dropdown">Aveiro</a>
+                                                <ul class="dropdown-menu">
+                                                <li><a href="best-aveiro.html">Organização</a></li>
+                                                <li><a href="team.html">Membros</a></li>
+                                                <li><a href="aveiro.html">Cidade</a></li>
+                                                <li><a href="university.html">Universidade</a></li>
+                                                </ul>
+                                        </li>                                                
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.events">EVENTOS</a>
+                                   <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="ebec.html">EBEC</a></li>
+                                        <li><a href="seasonal-courses.html">Cursos</a></li>
+                                        <li><a href="abcs.html">ABC</a></li>
+                                        <li><a href="btds.html">BTD</a></li>
+                                       <li><a href="innovnow.html">InnovNow</a></li>
+                                   </ul>
+                                </li>
+                                <li class="dropdown">
+                                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.partners">PARCEIROS</a>
+                                    <ul class="dropdown-menu custom-dropdown-menu">
+                                        <li><a href="sponsors.html">Atuais Parceiros</a></li>
+                                        <li><a href="BeaPartner.html">Seja um Parceiro</a></li>
+                                   </ul>
+                                </li>
+                                <li><a href="media.html" data-i18n="main-menu.media">MEDIA</a>
+                                </li>
+                                <li><a href="contacts.html" data-i18n="main-menu.contacts">CONTACTOS</a>
+                                </li>
+                                <li><a href="recrutamento.html" data-i18n="main-menu.recruitment">RECRUTAMENTO</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end NavBar -->               
+                            
+            
+            <div class="row" style="padding: 20px" id="content">                
+                
+                <!-- Title -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title panel-big-title">BEST Aveiro</h3>
+                    </div>                            
+                </div>
+                
+                <!-- Top content -->
+                <div class="col-lg-12" style="padding-top: 15px">
+                    
+                    <!-- BEST Aveiro image -->
+                    <img class="img-responsive img-thumbnail center-block" src="images/logo_BEST.png" alt="">
+                    <hr class="post-separator">
+
+                    <!-- BEST Aveiro description -->
+                    <div class="well well-sm">                        
+                        <p align="justify">O <b>BEST Aveiro</b> é um dos 96 grupos locais do <b>BEST - Board of European Students of Technology</b>, uma organização europeia de estudantes de Ciências, Engenharia e Tecnologia, presente em 96 universidades de 33 países, que trabalham cooperativamente para a prestação dos vários serviços que a organização disponibiliza.</p>
+                    </div>
+                    
+                </div>
+                <!-- ./Top content -->
+                
+                <!-- Left content -->
+                <div class="col-lg-6" style="">                   
+                    
+                    <!-- More about BEST Aveiro -->
+                    <div class="well well-sm">                       
+                        <img class="img-responsive img-center" src="images/best_aveiro/best_aveiro_cata.jpg" alt="">
+                        <br>
+                        <p align="justify">O grupo local do BEST em Aveiro foi fundado em 2008, sob a liderança de Eric Bosne, que tinha como objectivo desenvolver as suas capacidades académicas, partilhar experiências e conhecer novas pessoas, tanto em Portugal como no estrangeiro, contagiando alguns colegas com a mesma vontade. O projecto arrancou como BEST Observer group com apenas alguns membros, mas rapidamente evoluiu para o estatuto de Baby Member e neste momento o grupo local de Aveiro possui o estatuto de Full Member.</p>
+                    </div>
+
+                </div>
+                <!-- ./Left content -->
+                
+                <!-- Right content -->
+                <div class="col-lg-6">    
+
+                    <!-- More about BEST Aveiro activities -->
+                    <div class="well well-sm">
+                        <img class="img-responsive img-center" src="images/best_aveiro/ebec_activities.jpg" alt="">
+                        <br>
+                        <p align="justify">Esta é uma organização de e para estudantes, trabalhando em prol do desenvolvimento pessoal, académico e cultural dos mesmos, oferecendo diversas oportunidades de formação complementar e intercâmbio. Para tal, o BEST Aveiro organiza anualmente:</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-arrow-right"></i><a href="seasonal-courses.html">Curso Sazonal</a>;</li>
+                            <li><i class="fa-li fa fa-arrow-right"></i>Competição de engenharia <a href="ebec.html">EBEC Aveiro</a> (European BEST Engineering Competition);</li>
+                            <li><i class="fa-li fa fa-arrow-right"></i><a href="btds.html">BEST Training Days</a>, durante todo o ano;</li>
+                            <li><i class="fa-li fa fa-arrow-right"></i><a href="abcs.html">Aveiro BEST Competititons (ABCs)</a>;</li>
+                            <li><i class="fa-li fa fa-arrow-right"></i>Workshops.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- ./Right content -->
+                    
+                <!-- Bottom content -->
+                <div class="col-lg-12">
+                        
+                </div>
+                <!-- ./Bottom content -->
+                
+            </div>
+            
+        </div>
+         
+
+        <div  id="footer">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/BESTaveiro?fref=ts" class="btn btn-social-icon btn-facebook" target="_blank">
+    <i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.instawebgram.com/i/best.aveiro" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/bestaveiro" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/pub/best-aveiro/44/65b/a29" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://plus.google.com/100971072008213825789/posts" class="btn btn-social-icon btn-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" align="center" id="by">
+                    <h4>Powered by BEST Aveiro IT Team - The-Bugs ©2015</h4>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>

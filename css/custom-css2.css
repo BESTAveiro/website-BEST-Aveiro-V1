@@ -1,0 +1,212 @@
+/* Map container */
+.map {
+    min-width: 300px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Blue headers */
+.header {
+    background-color: #F5F5F5;
+    color: #36A0FF;
+    height: 70px;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.header2 {
+    color: #36A0FF;
+    font-size: 35px;
+}
+
+/* Big blue icons */
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+/* Team member template */
+.team-member {
+    padding-bottom: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Grey separator */
+hr.post-separator{
+	border-top: 1px solid #8c8b8b;
+}
+
+/* Center image */
+.img-center {
+	margin: 0 auto;
+}
+
+/* Event box */
+.box > .icon {
+    text-align: center;
+    position: relative;
+}
+
+.box > .icon > .image img{
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    border: 7px solid #337ab7;
+    line-height: 100px;
+    border-radius: 5%;
+    background: #FFFFFF;
+    vertical-align: middle;
+}
+
+.box > .icon:hover > .image img {
+    border: 7px solid #f9a61a;
+}
+
+.box > .icon > .image > i {
+    font-size: 48px !important;
+    color: #fff !important;
+}
+
+.box > .icon:hover > .image > i {
+    color: white !important;
+}
+
+.box > .icon > .info {
+    margin-top: -40px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 15px 0 10px 0;
+}
+
+    .box > .icon > .info > h3.title {
+        color: #000;
+        font-weight: 500;
+        margin-top: 35px;
+    }
+
+    .box > .icon > .info > p {
+        color: #000;
+        line-height: 1.5em;
+        margin: 20px;
+    }
+
+.box > .icon > .info > .more a {
+    color: #222;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.box > .icon:hover > .info > .more > a {
+    color: #000;
+    padding: 6px 8px;
+    border-bottom: 6px solid #f9a61a;
+}
+
+/* Title */
+#title-container {
+    background: #666;
+    margin: auto;
+    width: 500px;
+    height: 700px;
+    padding-top: 30px;
+    font-family: helvetica, arial, sans-serif;
+    }
+ 
+h1 {
+     background: rgba(8, 114, 185, 1);     
+     padding: 10px 20px;
+     margin-left: -57px;
+     margin-top: 0;
+     position: relative;
+     width: 70%;
+ 
+    -moz-box-shadow: 1px 1px 3px #292929;
+    -webkit-box-shadow: 1px 1px 3px #292929;
+       box-shadow: 1px 1px 3px #292929;
+ 
+    color: #454545;
+    text-shadow: 0 1px 0 white;
+}
+ 
+.arrow {
+     width: 0; height: 0;
+     line-height: 0;
+     border-left: 20px solid transparent;
+     border-top: 10px solid #E2F1FF;
+     top: 101.5%;
+     left: 0;
+     position: absolute;
+}
+
+/* Team images */
+.img-team {
+    width: 150px;
+    height: 150px;
+}
+
+/* Team containers */
+.team-container {
+    margin-top: -30px;
+    padding-top: 35px;
+    margin-bottom: 60px;
+}
+
+/* Responsive videos */
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Vertical divider */
+.vr {
+    border-left:1px solid #000;
+    height:500px;
+}
+
+/* Panel title */
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: white;
+}
+
+/* Panel big title */
+.panel-big-title {
+    font-size: 40px;   
+}
+
+/* Languages container (top and right corner) */
+.languages-container {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
+
+.help-block {
+    margin-left: 30px;
+}
