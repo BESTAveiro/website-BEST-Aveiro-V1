@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BEST Aveiro</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Website from Local BEST Group Aveiro">
+    <meta name="keywords" content="BEST, best, aveiro, board, tecnology">
+    <meta name="author" content="IT-Bugs BEST Aveiro">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/custom-css.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom-css2.css" />
+
+    <!-- i18next Javascript -->
+    <!-- <script src="http://i18next.com/public/download/latest/i18next.js"></script> -->
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="js/custom-js.js"></script>
+
+    <!-- Facebook moderation tool -->
+    <meta property="fb:admins" content="916968148360903"/>
+</head>
+<body>
+
+<div  class="jumbotron" id="header"> <!-- begin header-->
+
+    <a href="//bestaveiro.web.ua.pt" > <img id="logo_BEST" src="images/logo_BEST_branco.png" onmouseover="this.src='images/logo_BEST.png'" onmouseout="this.src='images/logo_BEST_branco.png'"/></a>
+
+</div> <!-- end header-->
+
+<!-- Language dropdown
+<div class="languages-container">
+    <div id="languages-dropdown" data-input-name="language"></div>
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="lang-dropdown">
+            <img src="images/pt.png"> &nbsp; Portuguese &nbsp; <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#" id="pt-lang"><img src="images/pt.png"> &nbsp; Portuguese &nbsp; </a></li>
+            <li><a href="#" id="en-lang"><img src="images/gb.png"> &nbsp; English &nbsp; </a></li>
+        </ul>
+    </div>
+</div>
+ ./Language dropdown -->
+<script>
+    (function($){
+        $(document).ready(function(){
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);
+</script>
+
+
+<div  class="container" id="main">
+    <div class="row" style="padding: 0px" > <!-- Nav Bar -->
+        <div id="custom-bootstrap-menu" class="navbar1" role="navigation" style="margin:0px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="//bestaveiro.web.ua.pt" data-i18n="main-menu.home">HOME</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.best">BEST</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="best-international.html">Internacional</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aveiro</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="//bestaveiro.web.ua.pt/best-aveiro.html">Organização</a></li>
+                                        <li><a href="//bestaveiro.web.ua.pt/team.html">Membros</a></li>
+                                        <li><a href="//bestaveiro.web.ua.pt/aveiro.html">Cidade</a></li>
+                                        <li><a href="//bestaveiro.web.ua.pt/university.html">Universidade</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.events">EVENTOS</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="//bestaveiro.web.ua.pt/ebec.html">EBEC</a></li>
+                                <li><a href="//bestaveiro.web.ua.pt/seasonal-courses.html">Cursos</a></li>
+                                <li><a href="//bestaveiro.web.ua.pt/abcs.html">ABC</a></li>
+                                <li><a href="//bestaveiro.web.ua.pt/btds.html">BTD</a></li>
+                                <li><a href="//bestaveiro.web.ua.pt/innovnow.html">InnovNow</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-i18n="main-menu.partners">PARCEIROS</a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li><a href="//bestaveiro.web.ua.pt/sponsors.html">Atuais Parceiros</a></li>
+                                <li><a href="//bestaveiro.web.ua.pt/BeaPartner.html">Seja um Parceiro</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="media.html" data-i18n="main-menu.media">MEDIA</a>
+                        </li>
+                        <li><a href="//bestaveiro.web.ua.pt/contacts.html" data-i18n="main-menu.contacts">CONTACTOS</a>
+                        </li>
+                        <li><a href="//bestaveiro.web.ua.pt/recrutamento.html" data-i18n="main-menu.recruitment">RECRUTAMENTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end NavBar -->
+    <div class="row" style="padding: 20px" id="content">
+
+        <!-- News Side -->
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title panel-big-title text-center" data-i18n="homepage.news.title">Notícias</h3>
+                </div>
+            </div>
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <h3 class="panel-title" style="font-size:25px; color:white">Regional Meeting Roma - Entrevista a Lígia Ferreira</h3>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <img class="img-responsive img-center" src="images/News/springRM2017.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> 01/05/2017</p>
+                        <a class="btn btn-primary" href="News/springRM2017.html">Ver Mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <h3 class="panel-title" style="font-size:25px; color:white">BEST Career Day</h3>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <img class="img-responsive img-center" src="images/News/bcd.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> 01/05/2017</p>
+                        <a class="btn btn-primary" href="News/bcd.html">Ver Mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <h3 class="panel-title" style="font-size:25px; color:white">
+                                Aseeni'17 - Ação de Sensibilização para Estudos e Estágios Nacionais e Internacionais</h3>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <img class="img-responsive img-center" src="images/News/aseeni.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> 01/05/2017</p>
+                        <a class="btn btn-primary" href="News/aseeni.html">Ver Mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/entrevista_ana_malta.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Formações postas em prática: Ana Malta</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/entrevista_ana_malta.html">
+                            <img class="img-responsive img-center" src="images/News/ana_malta.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on March 14, 2017 at 12:00 PM</p>
+                        <!-- Description -->
+                        <p align="justify">”Agora que tenho mais responsabilidades, sinto que mesmo assim consigo fazer
+                            ainda mais, o que mostra que realmente consegui organizar o meu tempo, o trabalho é muito mais
+                            produtivo, mais eficaz.”</p>
+                        <a class="btn btn-primary" href="News/entrevista_ana_malta.html">Também quero! <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/recrutamento.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Foge da tua zona de conforto!</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/recrutamento.html">
+                            <img class="img-responsive img-center" src="images/News/recrutamento.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on March 14, 2017 at 12:00 PM</p>
+                        <!-- Description -->
+                        <p align="justify">O BEST Aveiro irá recrutar entre 13 de março a 2 de abril e tu não vais querer
+                            deixar passar a oportunidade de fugir da tua zona de conforto!</p>
+                        <a class="btn btn-primary" href="News/recrutamento.html">Onde é que me inscrevo? <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/feira_de_empresas.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Feira de empresas e cocktail network</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/feira_de_empresas.html">
+                            <img class="img-responsive img-center" src="images/News/feira_de_empresas.JPG" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on March 14, 2017 at 12:00 PM</p>
+                        <!-- Description -->
+                        <p align="justify">Além da competição, todos os estudantes da Universidade de Aveiro
+                            terão a oportunidade de estar presentes na feira de empresas e cocktail network,
+                            a serem realizados no dia 14 de março.</p>
+                        <a class="btn btn-primary" href="News/feira_de_empresas.html">Quero saber mais! <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/bogdancourses.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Um curso por ano: Bohdan Kulyk</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/bogdancourses.html">
+                            <img class="img-responsive img-center" src="images/News/bogdan.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on February 18, 2017 at 10:00 PM</p>
+                        <!-- Description -->
+                        <p align="justify">O primeiro curso tornou claro que algumas das experiências mais memoráveis do
+                            mesmo só são possíveis nos cursos BEST.</p>
+                        <a class="btn btn-primary" href="News/bogdancourses.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/pedroebec.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Por dentro da EBEC: Pedro Reis</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/btd_tm.html">
+                            <img class="img-responsive img-center" src="images/News/ebec.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on February 18, 2017 at 10:00 PM</p>
+                        <!-- Description -->
+                        <p align="justify">Chegamos à reta final,(...)
+                            o momento de orgulho onde consigo observar todo o nosso esforço em conciliar as aulas, trabalhos
+                            e testes a ser recompensado, e onde consigo olhar para trás e ver como todos nós crescemos com este
+                            evento.</p>
+                        <a class="btn btn-primary" href="News/pedroebec.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/btd_tm.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">V BEST Training Day - Time Management</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/btd_tm.html">
+                            <img class="img-responsive img-center" src="images/News/btd_tm.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on December 21, 2015 at 9:55 PM</p>
+                        <!-- Description -->
+                        <p align="justify">No passado dia 16 de dezembro, decorreu mais uma edição dos BEST Training Days onde foi abordada a temática da gestão de tempo.</p>
+                        <a class="btn btn-primary" href="News/btd_tm.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/abc_15.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">V ABC - Competição em Chain Reaction</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/abc_15.html">
+                            <img class="img-responsive img-center" src="images/News/abc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on November 28, 2015 at 11:55 PM</p>
+                        <!-- Description -->
+                        <p align="justify">No passado dia 25 de novembro, decorreu a V edição das Aveiro BEST Competitions, a qual teve uma grande adesão, contando com a participação de 10 equipas, total de 40 participantes.</p>
+                        <a class="btn btn-primary" href="News/abc_15.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/pm.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">BEST PRESIDENTS' MEETING 2015</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/pm.html">
+                            <img class="img-responsive img-center" src="images/News/pm.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on November 25, 2015 at 23:55 PM</p>
+                        <!-- Description -->
+                        <p align="justify">De 5 a 11 de Novembro realizou-se o Encontro Internacional de Presidentes (BEST Presidents’ Meeting) em Flandres, Bélgica, organizado pelos grupos locais BEST de Ghent e Leuven. Esta foi a 21ª edição deste evento que contou com a presença dos presidentes dos 96 grupos locais BEST, a direção do BEST Internacional e de vários delegados das equipas de trabalho do BEST.</p>
+                        <a class="btn btn-primary" href="News/pm.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+            <!-- New -->
+            <div class="well well-sm">
+                <div class="panel-body">
+                    <!-- Title -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-custom">
+                            <a href="News/innovnow'15.html" style="text-decoration:none">
+                                <h3 class="panel-title" style="font-size:25px; color:white">Innovatio Now 2015</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- image -->
+                    <div class="col-md-4">
+                        <a href="News/innovnow'15.html">
+                            <img class="img-responsive img-center" src="images/innovnow/logo_innovnow.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Date and time -->
+                        <p><span class="glyphicon glyphicon-time"></span> Posted on November 25, 2015 at 23:55 PM</p>
+                        <!-- Description -->
+                        <p align="justify">No passado dia 16 de outubro decorreu no edifício da reitoria o Innovatio Now 2015. Organizado pela associação BEST Aveiro, este foi um evento direcionado para a área da tecnologia e inovação que existe em Portugal.</p>
+                        <a class="btn btn-primary" href="News/innovnow'15.html">Continue Reading <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./New -->
+
+        </div>
+
+        <!-- Events Side -->
+        <div class="col-lg-4">
+
+            <div class="panel panel-default">
+                <div class="panel-heading panel-heading-custom">
+                    <h3 class="panel-title panel-big-title text-center" data-i18n="homepage.events.title">Eventos</h3>
+                </div>
+            </div>
+
+            <!-- Event -->
+            <div class="box">
+                <div class="icon">
+                    <div class="image">
+                        <a href="http://bestaveiro.web.ua.pt/ebec/">
+                            <img class=img-center src="images/logo_ebec_100_150.png"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h3 class="title">EBEC</h3>
+                        <p>
+                            Conhece a maior competição de engenharia da europa!
+                        </p>
+                        <div class="more">
+                            <a href="http://bestaveiro.web.ua.pt/ebec/"><i class="fa fa-plus"></i> Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+            <!-- End event -->
+
+            <br/>
+            <br/>
+
+            <!-- Event -->
+            <div class="box">
+                <div class="icon">
+                    <div class="image">
+                        <a href="http://bestaveiro.web.ua.pt/innovationnow/">
+                            <img class="img-circle img-center" src="images/innovnow/logo_innovnow.png"/>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h3 class="title">Innovation Now</h3>
+                        <p>
+                            Gostas de inovação? Este é o evento ideal para ti.
+                        </p>
+                        <div class="more">
+                            <a href="http://bestaveiro.web.ua.pt/innovationnow/"><i class="fa fa-plus"></i> Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
+            <!-- End event -->
+
+        </div>
+        <!-- End events side -->
+
+        <!-- Older and next buttons -->
+        <!--<ul class="pager">
+            <li class="previous">
+                <a href="#">&larr; Older</a>
+            </li>
+            <li class="next">
+                <a href="#">Newer &rarr;</a>
+            </li>
+        </ul>
+
+        </div>-->
+
+    </div>
+
+</div>
+<!-- end main -->
+<div  id="footer">
+    <div class="row">
+        <div class="col-md-12" align="center">
+            <ul class="list-inline social-buttons">
+                <li><a href="https://www.facebook.com/BESTaveiro?fref=ts" class="btn btn-social-icon btn-facebook" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="http://www.instawebgram.com/i/best.aveiro" class="btn btn-social-icon btn-instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li><a href="https://twitter.com/bestaveiro" class="btn btn-social-icon btn-twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/pub/best-aveiro/44/65b/a29" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://plus.google.com/100971072008213825789/posts" class="btn btn-social-icon btn-google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-12" align="center" id="by">
+            <h4>Powered by BEST Aveiro IT Team - The-Bugs ©2017</h4>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
