@@ -211,6 +211,13 @@ h1 {
     margin-left: 30px;
 }
 /*adicionado recentemente*/
+/*Ricardo - não faças isto. Evita ao máximo usar apenas elementos HTML como seletores CSS
+isso cria regras muito gerais. A partir de agora sempre que usares o elemento ul ele vai usar esta regra que tu criaste
+isto pode não ser o desejado, e criou-me muitos problemas no site do innov 2017. Sugiro usares classes ou IDs no seletores CSS.
+Separados ou em conjunto com um elemento. Por exemplo, eu vi que meteste class="menu" no ul que querias justificar. Então, ao usares
+.menu no seletor a regra vai ser usada. Se usares ul.menu (significa todos os ul que pertençam à class menu) também funciona.
+Se adotares isto no início vai ficar 200% mais fácil o código ser reutilizado no futuro
+:) bom trabalho Diego*/
 ul {
     text-align:justify;
 }
