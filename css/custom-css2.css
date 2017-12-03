@@ -44,6 +44,13 @@ hr.post-separator{
 /* Center image */
 .img-center {
 	margin: 0 auto;
+
+}
+.img-center2{
+  margin: 0 auto;
+  position: absolute;
+  width: 150px;
+  height: 100px
 }
 
 /* Event box */
