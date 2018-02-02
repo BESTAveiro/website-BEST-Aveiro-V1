@@ -228,3 +228,18 @@ Se adotares isto no início vai ficar 200% mais fácil o código ser reutilizado
 ul {
     text-align:justify;
 }
+
+.left{
+  text-align:right;
+}
+
+.table{
+  border: 1px solid transparent;
+}
+th{
+  border:10px solid transparent
+}
+
+.content_lightweight{
+  font-weight:normal;
+}

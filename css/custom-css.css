@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    background-color:#e6e6e6; 
+    background-color:#e6e6e6;
     width: 100%;
 	text-rendering: optimizeLegibility;
     font-weight: 400;
@@ -28,14 +28,14 @@ body{
     width: 25%;
 }
 
-@media (min-width: 768px) and (max-width: 992px) { 
-    
+@media (min-width: 768px) and (max-width: 992px) {
+
    #header{
         background-image: url(../images/fundo_cima.png);
         background-repeat: no-repeat;
         background-size: 100% 110%;
     }
-    
+
     #logo_BEST{
     position: relative;
     margin-left: 10%;
@@ -45,15 +45,15 @@ body{
 }
 }
 
-@media (max-width: 768px) { 
-    
+@media (max-width: 768px) {
+
   #logo_BEST{
     position: relative;
     margin-left:5%;
     margin-top: 2%;
     width: 200px;
 }
-    
+
     #header{
         background-size: 100% 150%;
     }
@@ -66,7 +66,7 @@ body{
     margin: 0;
     padding: 0px;
     width: 100%;
-    
+
 }
 
 #custom-bootstrap-menu.navbar1 {
@@ -125,7 +125,7 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     table-layout: auto;
     float: none;
     width: 100%;
-    
+
 }
 
 .navbar-nav>li {
@@ -150,7 +150,7 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     background-color: #6ac0d4;
     background-image: none;
     color:rgb(255,255,255);
-    
+
 }
 
 .dropdown-submenu {
@@ -166,7 +166,7 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 0px 0px 0px;
     background-color: #0872b9;
-    
+
 }
 .dropdown-submenu>.dropdown-menu>li>a{color: white;}
 .dropdown-submenu:hover>.dropdown-menu {
@@ -204,7 +204,7 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     background-image: none;
 }
 
-@media (min-width: 992px) and (max-width: 1200px) { 
+@media (min-width: 992px) and (max-width: 1200px) {
 
     #custom-bootstrap-menu.navbar1 {
         font-size: 23px;
@@ -215,52 +215,52 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
 
 }
 
-@media (min-width: 768px) and (max-width: 992px) { 
-    
+@media (min-width: 768px) and (max-width: 992px) {
+
     #custom-bootstrap-menu.navbar1 {
     font-size: 16.5px;
-    
-    }  
+
+    }
 }
 
-@media (max-width: 768px) { 
-    
+@media (max-width: 768px) {
+
     #custom-bootstrap-menu.navbar1 {
     font-size: 15px;
     background-color: #0872b9;
-    }  
-    
+    }
+
     #custom-bootstrap-menu.navbar1 .navbar-nav{
         margin-left: 0px;
         margin-bottom: 15px;
     }
-    
+
     #custom-bootstrap-menu.navbar1 .navbar-nav>li {
         color: rgba(255, 255, 255,1);
         background-color: rgba(248, 248, 248, 0);
         display: block;
     }
-    
+
     .dropdown ul a {
         text-indent: 50px;
         font-size: 15px;
-        
+
     }
     .dropdown-submenu>.dropdown-menu>li>a{
     text-indent:60px;
     }
-    
+
     .icon-bar {
         background-color:rgb(255,255,255)!important;
     }
-    
-    
+
+
 }
 /*----- Conteúdo ---*/
 
 #main{
     margin-top: -300px;
-    
+
 }
 @media (min-width: 1200px) {
     .container {
@@ -273,11 +273,11 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     background-color: #e6e6e6;
     }
 
-@media (min-width: 768px) and (max-width: 992px) { 
-    
+@media (min-width: 768px) and (max-width: 992px) {
+
     #main{
     margin-top: -30%;
-    
+
 }
 }
 
@@ -295,12 +295,14 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
     margin-top:  100px;
 }
 
-@media (max-width: 768px) { 
-    
+@media (max-width: 768px) {
+
     #footer{
     background-image: url(../images/fundo_baixo_mobile.png)
     }
     }
+
+
 
 .btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
 .btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
@@ -350,4 +352,3 @@ custom-bootstrap-menu.navbar1 .navbar-toggle:hover .icon-bar,
 .btn-vk{color:#fff;background-color:#587ea3;border-color:rgba(0,0,0,0.2)}.btn-vk:hover,.btn-vk:focus,.btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{color:#fff;background-color:#4a6a89;border-color:rgba(0,0,0,0.2)}
 .btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{background-image:none}
 .btn-vk.disabled,.btn-vk[disabled],fieldset[disabled] .btn-vk,.btn-vk.disabled:hover,.btn-vk[disabled]:hover,fieldset[disabled] .btn-vk:hover,.btn-vk.disabled:focus,.btn-vk[disabled]:focus,fieldset[disabled] .btn-vk:focus,.btn-vk.disabled:active,.btn-vk[disabled]:active,fieldset[disabled] .btn-vk:active,.btn-vk.disabled.active,.btn-vk[disabled].active,fieldset[disabled] .btn-vk.active{background-color:#587ea3;border-color:rgba(0,0,0,0.2)}
-
